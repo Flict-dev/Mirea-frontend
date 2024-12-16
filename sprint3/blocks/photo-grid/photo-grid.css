@@ -1,0 +1,40 @@
+
+.photo-grid { 
+    display: grid;
+    gap: 16px; /* Отступ между элементами сетки */
+    max-width: 1184px; /* Максимальная ширина сетки */
+    margin: 0 auto; /* Центрирование сетки */
+    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr)); /* Адаптивные колонки */
+    padding: 0 48px; }
+
+
+@media screen and (max-width: 1279px) { 
+    .photo-grid { 
+        max-width: 928px; /* Уменьшение максимальной ширины */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Увеличение минимальной ширины колонок */
+        gap: 14px; /* Уменьшение отступа между элементами */
+    } 
+} 
+
+/* Стили для экранов шириной до 1023px (планшеты) */
+@media screen and (max-width: 1023px) { 
+    .photo-grid { 
+        max-width: 720px; 
+        grid-template-columns: repeat(auto-fit, minmax(352px, 1fr)); /* Увеличение минимальной ширины колонок */
+        gap: 16px; /* Возврат к исходному отступу между элементами */
+        margin-top: 88px;
+        padding: 0 24px; 
+} 
+}
+
+/* Стили для экранов шириной до 767px (мобильные устройства) */
+@media screen and (max-width: 767px) { 
+    .photo-grid { 
+        max-width: 288px; /* Значительное уменьшение максимальной ширины */
+        grid-template-columns: repeat(auto-fit, minmax(288px, 1fr)); /* Адаптация под мобильные экраны */
+        gap: 12px; 
+        margin-top: 64px; 
+        padding: 0 16px; 
+    } 
+}
+

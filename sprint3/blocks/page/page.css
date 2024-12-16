@@ -1,0 +1,20 @@
+.page {
+    margin: 0; 
+    padding: 0; 
+    font-family: "Inter", Arial, Helvetica, sans-serif; /* Устанавливает шрифты */
+    width: 100%; /* Ширина на весь доступный контейнер */
+    background-color: #2a2c2f; /* Тёмный фон страницы */
+    
+    
+    -webkit-font-smoothing: antialiased; /* Сглаживание шрифтов для WebKit */
+    -moz-osx-font-smoothing: grayscale; /* Сглаживание шрифтов для Firefox на macOS */
+    
+    
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    
+    text-rendering: optimizeLegibility; /* Оптимизация читаемости текста */
+    
+    min-width: 320px; /* Минимальная ширина страницы */
+}
